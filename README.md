@@ -13,6 +13,9 @@ Aprendizaje y Crecimiento.
 > generan automáticamente al primer uso, exclusivamente para fines de
 > demostración. Las metas y frecuencias de los 16 KPI corresponden al Plan
 > Estratégico OC-SENI 2026-2035.
+> Todo esto ha sido preparado parte de la entrega de un plan estrategico para una
+> institución del sector eléctrico, como trabajo final de la materia "**Gestión de
+> Indicadores en un Mercado Competitivo IEM-8640**" del **Master Mercados Eléctricos**.
 
 ## Demo en vivo
 
