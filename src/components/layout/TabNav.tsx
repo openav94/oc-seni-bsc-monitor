@@ -1,7 +1,8 @@
-import { ClipboardList, Database, LayoutDashboard, FileBarChart } from 'lucide-react'
+import { ClipboardList, Database, LayoutDashboard, FileBarChart, Home } from 'lucide-react'
 import { useNavigation, type TabId } from '../../context/NavigationContext'
 
 const TABS: { id: TabId; label: string; icon: typeof ClipboardList }[] = [
+  { id: 'inicio', label: 'Inicio', icon: Home },
   { id: 'entrada', label: 'Entrada de Datos', icon: ClipboardList },
   { id: 'basedatos', label: 'Base de Datos', icon: Database },
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },

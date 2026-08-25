@@ -2,6 +2,7 @@ import { DataProvider } from './context/DataContext'
 import { NavigationProvider, useNavigation } from './context/NavigationContext'
 import { Header } from './components/layout/Header'
 import { TabNav } from './components/layout/TabNav'
+import { Home } from './pages/Home'
 import { DataEntry } from './pages/DataEntry'
 import { Database } from './pages/Database'
 import { Dashboard } from './pages/Dashboard'
@@ -10,6 +11,8 @@ import { Summary } from './pages/Summary'
 function ActivePage() {
   const { activeTab } = useNavigation()
   switch (activeTab) {
+    case 'inicio':
+      return <Home />
     case 'entrada':
       return <DataEntry />
     case 'basedatos':

@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from 'react'
 import type { KpiRecord } from '../types/kpi'
 
-export type TabId = 'entrada' | 'basedatos' | 'dashboard' | 'resumen'
+export type TabId = 'inicio' | 'entrada' | 'basedatos' | 'dashboard' | 'resumen'
 
 interface NavigationContextValue {
   activeTab: TabId
@@ -20,7 +20,7 @@ interface NavigationContextValue {
 const NavigationContext = createContext<NavigationContextValue | null>(null)
 
 export function NavigationProvider({ children }: { children: ReactNode }) {
-  const [activeTab, setActiveTab] = useState<TabId>('dashboard')
+  const [activeTab, setActiveTab] = useState<TabId>('inicio')
   const [databaseFilterKpi, setDatabaseFilterKpi] = useState<string | null>(null)
   const [editingRecord, setEditingRecord] = useState<KpiRecord | null>(null)
   const [duplicating, setDuplicating] = useState(false)
